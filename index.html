@@ -77,7 +77,7 @@
             </div>
             <div class="intro-buttons">
                 <a class="btn common-btn" class="links" href="#contact">Contact</a>
-                <a class="btn common-btn" href="https://drive.google.com/file/d/16RN5lxExke4Oi7pbkQJfiUuFywWYNRYv/view?usp=sharing" target="_blank">Resume</a>
+                <a class="btn common-btn" href="https://drive.google.com/file/d/1HPE1hAJQNPgGaP3T05G2JyYxUu8hldU1/view?usp=sharing" target="_blank">Resume</a>
             </div>
             <div class="social-links">
                 <div class="footer-menu">
@@ -174,24 +174,25 @@
                 <h3>Software Engineer</h3>
                 <p><strong>JPMorgan Chase</strong></p>
                 <ul>
-                <li>Developed Python ETLs to load transactional data into SQL tables from multiple sources via REST APIs, which reduced manual data transformation efforts by 40%.</li>
-                <li>Engineered and migrated 20+ SQL views and indices across MS SQL databases to support schema evolution and scaling, while also lowering data retrieval time by 30% by storing data as JSON objects in AWS S3 buckets.</li>
-                <li>Deployed end-to-end forecasting pipelines using DevOps tools like Git, Jenkins, and Bitbucket, improving forecast accuracy by 10% by automating model training with Apache Airflow for real-time hourly predictions.</li>
-                <li>Managed Kubernetes clusters to ensure high availability of a critical volume data dashboard and optimized REST API - SQL integrations to improve data reliability and reduce latency by 25%.</li>
+                <li>Designed scalable Python-based distributed processing services to transform 1M+ daily transactional records from Splunk and Teradata through RESTful APIs, persisting aggregated datasets in SQL Server utilized by downstream analytics pipelines.</li>
+                <li>Optimized and migrated 20+ SQL views and indexes across schemas in SQL Server, refactoring complex queries, joins, and indexing strategies to improve query performance by 30% for requests made by a real-time capacity planning dashboard.</li>
+                <li>Established end-to-end CI/CD pipelines using Jenkins, incorporating automated testing (PyTest, JUnit), SonarQube code analysis, and AWS CloudWatch monitoring to enforce reliable production deployments using Git for version control.</li>
+                <li>Deployed containerized REST API services on Google Kubernetes Engine (GKE), configuring pod autoscaling and resource policies to ensure high dashboard availability and reduce system latency by 3 seconds for 400+ internal users.</li>
+                <li>Collaborated in a 6-member bootcamp team to create a full-stack rewards microservice platform using Spring Boot, PostgreSQL, and JavaScript with JWT authentication, building scalable REST API services and enabling secure user sessions.</li>
                 </ul>
                 </div>
             </div>
 
             <div class="timeline-item">
             <div class="timeline-content">
-                <div class="timeline-date">February 2023 - June 2023</div>
+                <div class="timeline-date">February 2023 - May 2023</div>
                 <h3>Software Engineering Intern</h3>
                 <p><strong>JPMorgan Chase</strong></p>
                 <ul>
-                <li>Built time-series models using the Facebook Prophet algorithm, performing EDA and parameter tuning to predict volume peaks for 25 channels, utilizing AWS S3, SageMaker, and CloudFormation to create an MLOps pipeline.</li>
-                <li>Integrated the AWS S3 Boto3 SDK to plot a volume data graph and designed a REST API to upload it to an S3 bucket, increasing the model’s performance by 20% through parameter optimization.</li>
-                <li>Implemented Controller-Service-Data model architecture in Spring Boot to transfer data between MS SQL database and AWS S3, which minimized the data transfer time between the application modules by 42%.</li>
-                <li>Containerized a Python application using Docker and exported it as an AWS ECR image, which optimized memory utilization and enabled its coupling with other microservices.</li>
+                <li>Built time-series forecasting pipelines using Facebook Prophet, AWS SageMaker, and Lambda, tuning Machine Learning model parameters across 25 business channels, delivering volume-peak predictions for infrastructure provisioning.</li>
+                <li>Engineered an Airflow-based hourly monitoring workflow using Python, REST APIs, and AWS SDK to produce hourly traffic metrics comparison plots and upload the visualizations to AWS S3, automating model performance monitoring.</li>
+                <li>Implemented Spring Boot microservices using a Controller-Service-Repository architecture to batch and transfer monthly JSON datasets between SQL Server and AWS S3 via REST APIs, minimizing inter-service data transfer latency by 42%.</li>
+                <li>Containerized Python and Spring Boot services using Docker, packaging model parameters and publishing images to AWS ECR to execute Airflow DAGs, lowering memory utilization and enabling scalable microservice deployment.</li>
                 </ul>
             </div>
             </div>
@@ -273,58 +274,53 @@
         <h1>Projects</h1>
         <div class="projects-container">
             <div class="project-card">
-            <img src="./static/images/context_based_product_description_generation_project.png" alt="Project 1 Screenshot">
+            <img src="static\images\Immigration_Knowledge_System.png" alt="Project 1 Screenshot">
             <div class="project-content">
-                <h3>Context-based Product Description Generation</h3>
-                <p>Fine-tuned LLMs (RNN, LSTM, GPT2, T5) to generate 1k+ coherent product descriptions from user reviews, 
-                    incorporating sentiment analysis, and achieved 0.86 BERT score representing high LSTM-text quality compared 
-                    to template-based methods.</p>
-                <p><strong>Skills:</strong> LLMs, Transformers, Natural Language Processing, Generative AI</p>
-                <a href="https://github.com/anjana502/Contextual-based-product-description-generation-using-Amazon-dataset" target="_blank" class="project-link">
+                <h3>Immigration Knowledge System</h3>
+                <p>Designed and deployed an interactive chatbot through Streamlit with backend services for processing multiple Universities’ 
+                    immigration data, implementing a FAISS vector store, and RAG-based retrieval pipelines to fetch relevant information.</p>
+                <p><strong>Skills:</strong> Generative AI, LlamaIndex, RAG, Streamlit</p>
+                <a href="https://github.com/anjana502/Immigration_Knowledge_System" target="_blank" class="project-link">
                 <i class="fab fa-github"></i> GitHub
                 </a>
             </div>
             </div>
             <div class="project-card">
-            <img src="./static/images/alzheimers_detection_project.png" alt="Project 2 Screenshot">
+            <img src="static\images\AlgoMentor.png" alt="Project 2 Screenshot">
             <div class="project-content">
-                <h3>Alzheimer's detection from MRI scan images</h3>
-                <p>Built an Alzheimer’s prediction system using MRI scan images, implementing Tensorflow-based CNNs, 
-                    RandomForest, and XGBoost classifiers, obtained 91% accuracy with data augmentation and enhanced output 
-                    interpretability using Grad-CAM.</p>
-                <p><strong>Skills:</strong> Machine Learning, TensorFlow, CNNs, Grad CAM/SHAP</p>
-                <a href="https://github.com/anjana502/Alzheimers_Prediction" target="_blank" class="project-link">
+                <h3>AlgoMentor</h3>
+                <p>Developed a full-stack web application using Node.js, Express, and JavaScript to store 500+ solved LeetCode problems in MongoDB, 
+                    providing personalized LLM summaries to help users revise solutions; Integrated OpenAI through RESTful APIs.</p>
+                <p><strong>Skills:</strong> Node.js, JavaScript, MongoDB, LLMs</p>
+                <a href="https://github.com/anjana502/AlgoMentor" target="_blank" class="project-link">
                 <i class="fab fa-github"></i> GitHub
                 </a>
             </div>
             </div>
             <div class="project-card">
-            <img src="./static/images/medical_image_chatbot_project.png" alt="Project 4 Screenshot">
+            <img src="static\images\Cognitive_Decline_Classifier.png" alt="Project 4 Screenshot">
             <div class="project-content">
-                <h3>RAG-based medical image retrieval chatbot</h3>
-                <p>Designed a LangChain-based RAG pipeline, generating image metadata embeddings using a vision–language model, 
-                    indexing them in ChromaDB, and enabling a cosine similarity-based medical image retrieval through a Gradio 
-                    user interface.</p>
-                <p><strong>Skills:</strong> LangChain, RAG, ChromaDB, Gradio</p>
-                <a href="https://github.com/anjana502/RAG_Based_Medical_Image_Retrieval_Chatbot" target="_blank" class="project-link">
+                <h3>Cognitive Decline Classifier</h3>
+                <p>Classified the patient’s dementia stage from MRI scan images using Neural Networks, Decision Trees, and SVM, with an accuracy of 
+                    84%. Provided model interpretability using Grad-CAM to highlight regions of scans contributing to the output.</p>
+                <p><strong>Skills:</strong> TensorFlow, Neural Networks, Decision Trees, SVM</p>
+                <a href="https://github.com/anjana502/Cognitive_Decline_Classifer" target="_blank" class="project-link">
                 <i class="fab fa-github"></i> GitHub
                 </a>
             </div>
             </div>
             <div class="project-card">
-            <img src="./static/images/self_learning_tracker_project.png" alt="Project 3 Screenshot">
+            <img src="static\images\Tumor_Progression_Analysis.png" alt="Project 3 Screenshot">
             <div class="project-content">
-                <h3>Self-Learning Tracker</h3>
-                <p>Developed a Flask API-based web application using HTML, CSS, JavScript, 
-                MySQL, and PHP with user and administrator views to facilitate self-learning 
-                course paths with user profiles, blog, and quiz features.</p>
-                <p><strong>Skills:</strong> Flask, MySQL, JavaScript, HTML/CSS</p>
-                <a href="https://github.com/anjana502/Self-Learning-Tracker" target="_blank" class="project-link">
+                <h3>Tumor Progression Analysis</h3>
+                <p>Implemented a multi-modal tumor stage prediction system analyzing multiple data modalities, utilized VAE and contrastive 
+                    learning methods to learn synergetic relations among modalities; achieved a 0.47 F-1 score by training an XGBoost model.</p>
+                <p><strong>Skills:</strong> PyTorch, XGBoost, Classification, Data cleaning</p>
+                <a href="https://github.com/anjana502/Tumor_Progression_Analysis" target="_blank" class="project-link">
                 <i class="fab fa-github"></i> GitHub
                 </a>
             </div>
             </div>
-
         </div>
     </section>
 
@@ -348,10 +344,6 @@
                 <div class="details">
                     <h5 class="contact-heading">EMAIL</h5>
                     <p class="contact-text">anjana.nallanagula@gmail.com</p>
-                </div>
-                <div class="details">
-                    <h5 class="contact-heading">PHONE</h5>
-                    <p class="contact-text">+1 (303) 994-3532</p>
                 </div>
                 <div class="details">
                 <p class="contact-text">

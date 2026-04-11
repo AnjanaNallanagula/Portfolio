@@ -15,6 +15,14 @@ hamburger.addEventListener('click', function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.querySelector(".bg-video");
+
+  if (video) {
+    video.playbackRate = 0.75; // 0.5 = half speed (slow motion)
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function() {
   var typed = new Typed("#typed", {
     strings: [

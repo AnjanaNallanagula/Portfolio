@@ -28,9 +28,6 @@
     <!-- Navbar header section -->
     <header class="header">
         <nav class="navbar">
-            <div class="logo">
-                <a style="color:#fff; background:transparent; outline:none; text-decoration:none;" href="#"><h3 class="logo-heading">Anjana Nallanagula</h3></a>
-            </div>
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars hamburger-icon"></i>
                 <i class="fas fa-times cross-icon"></i>
@@ -66,37 +63,78 @@
         </nav>
     </header>
 
-    <!-- Main hero banner -->
     <section id="home" class="hero">
-        <div class="intro">
-            <div class="headings">
-                <h1 class="my-heading">Anjana Nallanagula</h1>
-                <h4 class="sub-heading">
-                    <p>I am a <span id="typed"></span></p>
-                </h4>
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="static/videos/background_video.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <div class="hero-content">
+        <!-- Left side -->
+        <div class="hero-left">
+            <p class="hero-eyebrow">Software Engineer • Backend • AI/ML</p>
+
+            <h1 class="my-heading">Anjana Nallanagula</h1>
+
+            <div class="sub-heading">
+                <p>I am a <span id="typed"></span></p>
             </div>
-            <div class="intro-buttons">
-                <a class="btn common-btn" class="links" href="#contact">Contact</a>
-                <a class="btn common-btn" href="https://drive.google.com/file/d/1HPE1hAJQNPgGaP3T05G2JyYxUu8hldU1/view?usp=sharing" target="_blank">Resume</a>
+
+            <p class="hero-tagline">
+                Building scalable backend systems, ML-powered applications, and cloud-native data pipelines with measurable impact.
+            </p>
+
+            <div class="hero-contact-row">
+                <a class="btn common-btn" href="#contact">
+                    Contact
+                    <i class="fas fa-user btn-icon"></i>
+                </a>
+                <a class="btn common-btn" href="https://drive.google.com/file/d/1HPE1hAJQNPgGaP3T05G2JyYxUu8hldU1/view?usp=sharing" target="_blank">
+                    Resume
+                    <i class="fas fa-download btn-icon"></i>
+                </a>
+                </div>
+
+            <div class="hero-socials">
+                <a class="social-circle" href="mailto:anjana.nallanagula@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a class="social-circle" href="https://www.linkedin.com/in/anjana-nallanagula/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="social-circle" href="https://github.com/anjana502" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="social-circle" href="https://leetcode.com/your-username/" target="_blank" aria-label="LeetCode">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/leetcode.svg" alt="LeetCode" class="leetcode-icon">
+                </a>
             </div>
-            <div class="social-links">
-                <div class="footer-menu">
-                    <ul class="footer-menu-list">
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="https://www.linkedin.com/in/anjana-nallanagula/" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="https://github.com/anjana502" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
+        </div>
+
+        <!-- Right side -->
+        <div class="hero-right">
+            <div class="hero-metrics">
+                <div class="metric-card">
+                    <h3>1M+</h3>
+                    <p>Daily records processed</p>
+                </div>
+                <div class="metric-card">
+                    <h3>30%</h3>
+                    <p>SQL performance improvement</p>
+                </div>
+                <div class="metric-card">
+                    <h3>42%</h3>
+                    <p>Lower inter-service latency</p>
+                </div>
+                <div class="metric-card">
+                    <h3>4.0</h3>
+                    <p>MS GPA</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- About Section -->
     <section id="about" class="about">
